@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ZipLogCli.cli": {
+      "commandName": "Project",
+      "commandLineArgs": "*.txt -d "
+    }
+  }
+}
