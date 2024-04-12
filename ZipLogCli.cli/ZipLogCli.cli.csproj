@@ -2,12 +2,44 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PublishAot>true</PublishAot>
+    <PublishAot>false</PublishAot>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <AssemblyName>zl</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Title>ZipLogCli</Title>
+    <Authors>Alfredo Pinto Molina</Authors>
+    <Product>ZipLogCli</Product>
+    <Description>A client windows app to add log to zip fast and easy.</Description>
+    <Copyright>Alfredo Pinto Molina</Copyright>
+    <PackageProjectUrl>https://github.com/proteo5/ZipLogCli</PackageProjectUrl>
+    <PackageIcon>icon.jpeg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/proteo5/ZipLogCli.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>https://spdx.org/licenses/MIT.html</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PublishTrimmed>True</PublishTrimmed>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.jpeg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Cocona" Version="2.2.0" />
